@@ -22,7 +22,17 @@ def quickSort1(array):
 
 def quickSort2(array):
     #Ordenação quicksort com implementação utilizando método de partição
-    pass
+    qs2(array,0, len(array)-1)
+    return array
+
+def qs2(array, left, right):
+    #Ordenação quicksort com implementação utilizando método de partição - função auxiliar
+    if left >= right:
+        return
+    else:
+        pivot = partition(array,left,right)
+        qs2(array,left,pivot-1)
+        qs2(array,pivot+1,right)
 
 
 def partition(array, left, right):
