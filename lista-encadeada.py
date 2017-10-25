@@ -49,7 +49,34 @@ class Dictionary:
         return self.__last = node
 
     def empty(self):
-        #Método que ver se o dicionário está vazio e devolve um valor bool referente ao resultado
+        #Varifica se o dicionário está vazio e devolve um valor bool referente ao resultado
         if self.__last is self.__first:
             return True
         return False
+
+    def removeEnd(self):
+        #Remove elemento do fim
+        if self.empty():
+            raise IndexError ("Remove from empty list")
+
+        aux = self.__last
+        aux.before.next = aux.next
+        self.__last = aux.before
+        aux.before = None
+        del aux
+
+    def removeStart(self):
+        #Remove elemento do início
+        if self.empty():
+            raise IndexError ("Remove from empty list")
+
+        aux = self.__first.next
+        self.__first = aux.next
+
+        if self.__first.next = self.__last:
+            self.__last = self.__first
+        else:
+            aux.next.before = self.__first
+
+        aux.next = aux.before = None
+        del aux
