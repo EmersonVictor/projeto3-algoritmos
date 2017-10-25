@@ -43,16 +43,31 @@ class Dictionary:
         self.__raiz = Node() = self.__first = self.__last
 
     def setFirst(self,node):
-        return self.__first = node
+        self.__first = node
 
     def setLast(self,node):
-        return self.__last = node
+        self.__last = node
 
     def empty(self):
-        #Varifica se o dicionário está vazio e devolve um valor bool referente ao resultado
+        #Verifica se o dicionário está vazio e devolve um valor bool referente ao resultado
         if self.__last is self.__first:
             return True
         return False
+
+    def insertStart(self, item):
+        #Insere item no início
+        aux = self.__first.next
+        self.__first.next = Node(self.__first,item,self.__first.next)
+
+        if self.empty():
+            self.__last = self.__first.next
+        else:
+            aux.before = self.__first.next
+
+    def insertEnd(self, item):
+        #Insere item no fim
+        self.__last = Node(self.__last,item,None)
+        self.__last = self.__last.next
 
     def removeEnd(self):
         #Remove elemento do fim
