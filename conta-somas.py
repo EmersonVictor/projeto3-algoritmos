@@ -11,3 +11,34 @@ Data:	2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
+
+from quicksort import *
+
+def countSums(array):
+	#Conta a quantidade de triplas que somadas resultam em zero
+	qs2(array)
+	size = len(array)
+	total = 0 <
+
+	for i in range(size):
+		for j in range(i+1, size):
+			if binarySearch(-array[i]-array[j], array) > j:
+				total += 1
+
+	return total
+
+def binarySearch(number, array):
+	#Realiza uma bunca binária em um vetor, retornando a posição caso encontre ou -1 caso não encontre
+	start = 0
+	end = len(array) - 1
+	position = (start + end) // 2
+
+	while start <= end:
+		if array[position] > number:
+			start = position + 1
+		elif array[position] < number:
+			end = position - 1
+		else:
+			return position
+
+	return -1
