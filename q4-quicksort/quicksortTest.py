@@ -19,44 +19,86 @@ def testQuicksort():
 	sizes = [50, 100, 500, 1000, 5000, 10000]
 	results = open("qs-results.txt",'a+')
 
-	results.write("Teste")
-	results.write("")
+	results.write("---------- TESTE ----------")
+	results.write("\n")
 
 	for size in sizes:
 		array = list(numpy.random.randint(1000,size=size))
-		result = "Duração com {0} elementos não ordenados: qs1 {1} || qs2 {2}".format(size, timeQS1(array), timeQS1(array))
+
+		try:
+			result = "QS1 = Duração com {0} elementos não ordenados: {1}\n".format(size, timeQS1(array))
+		except RecursionError as e:
+			result = "QS1 = Duração com {0} elementos não ordenados: -1\n".format(size)
+
 		results.write(result)
 		print(result)
 
-	results.write("--")
+		try:
+			result = "QS2 = Duração com {0} elementos não ordenados: {1}\n".format(size, timeQS2(array))
+		except RecursionError as e:
+			result = "QS2 = Duração com {0} elementos não ordenados: -1\n".format(size)
+
+		results.write(result)
+		print(result)
+
+	results.write("--\n")
 
 	for size in sizes:
 		array = list(numpy.random.randint(1000,size=size))
 		array = sorted(array)
-		result = "Duração com {0} elementos ordenados crescentemente: qs1 {1} || qs2 {2}".format(size, timeQS1(array), timeQS1(array))
+
+		try:
+			result = "QS1 = Duração com {0} elementos ordenados crescentemente: {1}\n".format(size, timeQS1(array))
+		except RecursionError as e:
+			result = "QS1 = Duração com {0} elementos ordenados crescentemente: -1\n".format(size)
+
 		results.write(result)
 		print(result)
 
-	results.write("--")
+		try:
+			result = "QS2 = Duração com {0} elementos ordenados crescentemente: {1}\n".format(size, timeQS2(array))
+		except RecursionError as e:
+			result = "QS2 = Duração com {0} elementos ordenados crescentement: -1\n".format(size)
+
+		results.write(result)
+		print(result)
+
+	results.write("--\n")
 
 	for size in sizes:
 		array = list(numpy.random.randint(1000,size=size))
 		array = sorted(array, reverse=True)
-		result = "Duração com {0} elementos ordenados decrescentemente: qs1 {1} || qs2 {2}".format(size, timeQS1(array), timeQS1(array))
+
+		try:
+			result = "QS1 = Duração com {0} elementos ordenados crescentemente: {1}\n".format(size, timeQS1(array))
+		except RecursionError as e:
+			result = "QS1 = Duração com {0} elementos ordenados crescentemente: -1\n".format(size)
+
 		results.write(result)
 		print(result)
 
-	results.write("")
+		try:
+			result = "QS2 = Duração com {0} elementos ordenados decrescentemente: {1}\n".format(size, timeQS2(array))
+		except RecursionError as e:
+			result = "QS2 = Duração com {0} elementos ordenados decrescentement: -1\n".format(size)
+
+		results.write(result)
+		print(result)
+
+	results.write("\n")
 	results.close()
 
 def timeQS1(array):
-	start = time.default_timer()
+	start = timeit.default_timer()
 	quickSort1(array)
-	end = time.default_timer()
+	end = timeit.default_timer()
 	return (end - start)
 
 def timeQS2(array):
-	start = time.default_timer()
+	start = timeit.default_timer()
 	quickSort2(array)
-	end = time.default_timer()
+	end = timeit.default_timer()
 	return (end - start)
+
+if __name__ == "__main__":
+	testQuicksort()
