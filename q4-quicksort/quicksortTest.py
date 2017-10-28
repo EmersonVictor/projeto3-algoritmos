@@ -11,82 +11,77 @@ Data:	2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
-from quicksort import *
-import numpy
+import sys
+sys.path.append('../testes')
+from listaVeiculos import *
+from  quicksort import *
 import timeit
 
 def testQuicksort():
-	sizes = [50, 100, 500, 1000, 5000, 10000]
+	array = createList("/home/emersonvictor/Desktop/Projetos/projeto3-algoritmos-20172/testes/veiculos.txt")
 	results = open("qs-results.txt",'a+')
-
 	results.write("---------- TESTE ----------")
 	results.write("\n")
 
-	for size in sizes:
-		array = list(numpy.random.randint(1000,size=size))
+	try:
+		result = "QS1 = Duração com elementos não ordenados: {0}\n".format(timeQS1(array))
+	except RecursionError as e:
+		result = "QS1 = Duração com elementos não ordenados: -1\n"
 
-		try:
-			result = "QS1 = Duração com {0} elementos não ordenados: {1}\n".format(size, timeQS1(array))
-		except RecursionError as e:
-			result = "QS1 = Duração com {0} elementos não ordenados: -1\n".format(size)
+	results.write(result)
+	print(result)
 
-		results.write(result)
-		print(result)
+	try:
+		result = "QS2 = Duração com elementos não ordenados: {0}\n".format(timeQS2(array))
+	except RecursionError as e:
+		result = "QS2 = Duração com elementos não ordenados: -1\n"
 
-		try:
-			result = "QS2 = Duração com {0} elementos não ordenados: {1}\n".format(size, timeQS2(array))
-		except RecursionError as e:
-			result = "QS2 = Duração com {0} elementos não ordenados: -1\n".format(size)
-
-		results.write(result)
-		print(result)
+	results.write(result)
+	print(result)
 
 	results.write("--\n")
 
-	for size in sizes:
-		array = list(numpy.random.randint(1000,size=size))
-		array = sorted(array)
 
-		try:
-			result = "QS1 = Duração com {0} elementos ordenados crescentemente: {1}\n".format(size, timeQS1(array))
-		except RecursionError as e:
-			result = "QS1 = Duração com {0} elementos ordenados crescentemente: -1\n".format(size)
+	array = sorted(array, key=lambda x: x.getPlaca())
+	try:
+		result = "QS1 = Duração com elementos ordenados crescentemente: {0}\n".format(timeQS1(array))
+	except RecursionError as e:
+		result = "QS1 = Duração com elementos ordenados crescentemente: -1\n"
 
-		results.write(result)
-		print(result)
+	results.write(result)
+	print(result)
 
-		try:
-			result = "QS2 = Duração com {0} elementos ordenados crescentemente: {1}\n".format(size, timeQS2(array))
-		except RecursionError as e:
-			result = "QS2 = Duração com {0} elementos ordenados crescentement: -1\n".format(size)
+	try:
+		result = "QS2 = Duração com elementos ordenados crescentemente: {0}\n".format(timeQS2(array))
+	except RecursionError as e:
+		result = "QS2 = Duração com elementos ordenados crescentement: -1\n"
 
-		results.write(result)
-		print(result)
+	results.write(result)
+	print(result)
 
 	results.write("--\n")
 
-	for size in sizes:
-		array = list(numpy.random.randint(1000,size=size))
-		array = sorted(array, reverse=True)
+	array = sorted(array, key=lambda x: x.getPlaca(),reverse=True)
 
-		try:
-			result = "QS1 = Duração com {0} elementos ordenados crescentemente: {1}\n".format(size, timeQS1(array))
-		except RecursionError as e:
-			result = "QS1 = Duração com {0} elementos ordenados crescentemente: -1\n".format(size)
+	try:
+		result = "QS1 = Duração com elementos ordenados decrescentemente: {0}\n".format(timeQS1(array))
+	except RecursionError as e:
+		result = "QS1 = Duração com elementos ordenados decrescentemente: -1\n"
 
-		results.write(result)
-		print(result)
+	results.write(result)
+	print(result)
 
-		try:
-			result = "QS2 = Duração com {0} elementos ordenados decrescentemente: {1}\n".format(size, timeQS2(array))
-		except RecursionError as e:
-			result = "QS2 = Duração com {0} elementos ordenados decrescentement: -1\n".format(size)
+	try:
+		result = "QS2 = Duração com elementos ordenados decrescentemente: {0}\n".format(timeQS2(array))
+	except RecursionError as e:
+		result = "QS2 = Duração com elementos ordenados decrescentement: -1\n"
 
-		results.write(result)
-		print(result)
+	results.write(result)
+	print(result)
 
 	results.write("\n")
 	results.close()
+
 
 def timeQS1(array):
 	start = timeit.default_timer()

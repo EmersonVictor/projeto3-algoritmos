@@ -1,1 +1,10 @@
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.49985120800192817
+QS2 = Duração com elementos não ordenados: 0.3326002610010619
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
 

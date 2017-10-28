@@ -19,7 +19,7 @@ def quickSort1(array):
 		return []
 	else:
 		pivot = array.pop(0)
-		return quickSort1([num for num in array if num < pivot]) + [pivot] + quickSort1([num for num in array if num >= pivot])
+		return quickSort1([x for x in array if x.getPlaca() < pivot.getPlaca()]) + [pivot] + quickSort1([x for x in array if x.getPlaca() >= pivot.getPlaca()])
 
 
 def quickSort2(array):
@@ -47,13 +47,13 @@ def partition(array, left, right):
 
 	while cont:
 		l += 1
-		while array[l] < pivot:
+		while array[l].getPlaca() < pivot.getPlaca():
 			if l >= right:
 				break
 			l += 1
 
 		r -= 1
-		while array[r] > pivot:
+		while array[r].getPlaca() > pivot.getPlaca():
 			if r <= left:
 				break
 			r -= 1

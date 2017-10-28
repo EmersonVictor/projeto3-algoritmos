@@ -87,7 +87,7 @@ class Dictionary:
         aux = self.__first.next
         self.__first = aux.next
 
-        if self.__first.next = self.__last:
+        if self.__first.next is self.__last:
             self.__last = self.__first
         else:
             aux.next.before = self.__first
