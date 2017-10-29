@@ -11,12 +11,10 @@ Data:	2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
-from lista-encadeada import *
-import sys
+import numpy, linecache, timeit,sys
+from lista_encadeada import *
 sys.path.append('../testes')
 from listaVeiculos import *
-import numpy
-import timeit
 
 def newList(ordered=False,reverse=False):
     #Cria um objeto do tipo dicionário não ordenado ou ordenado crescentemente/decrescentemente
@@ -43,20 +41,18 @@ def newList(ordered=False,reverse=False):
 def timeSearch(dictionary, key):
     #Calcula o tempo de busca de uma determinada chave em um dicionário
     start = timeit.default_timer()
-	dictionary.searchKey(key)
-	end = timeit.default_timer()
+    dictionary.searchKey(key)
+    end = timeit.default_timer()
     return end - start
 
 def keysToSearch(seed, size):
     #Cria uma lista de placas a partir do arquivo de veículos
     numpy.random.seed(seed)
-    array = list(numpy.random.randint(-1000,1000,size=size))
-    vehicles = open("../testes/veiculos.txt",r)
+    array = list(numpy.random.randint(0,20000,size=size))
     keys = []
 
     for position in array:
-        vehicles.seek(position)
-        aux = vehicles.readline().split()
+        aux = linecache.getline("../testes/veiculos.txt",position).split()
         keys.append(aux[6])
 
     return keys
@@ -66,26 +62,35 @@ def main():
     keys = keysToSearch(57,1000)
     results = open("ls-results.txt","a+")
     results.write("TESTE NÃO ORDENADO\n\n")
+    print("TESTE NÃO ORDENADO\n\n")
 
     for key in keys:
         time = timeSearch(dictionary, key)
-        results.write(str(time) + "\n")
+        time = "{0}\n".format(time)
+        results.write(time)
+        print(time)
 
     results.write("\n")
     dictionary = newList(True)
     results.write("TESTE ORDENADO CRESCENTEMENTE\n\n")
+    print("TESTE ORDENADO CRESCENTEMENTE\n\n")
 
     for key in keys:
         time = timeSearch(dictionary, key)
-        results.write(str(time) + "\n")
+        time = "{0}\n".format(time)
+        results.write(time)
+        print(time)
 
     results.write("\n")
     dictionary = newList(True,True)
     results.write("TESTE ORDENADO DECRESCENTEMENTE\n\n")
+    print("TESTE ORDENADO DECRESCENTEMENTE\n\n")
 
     for key in keys:
         time = timeSearch(dictionary, key)
-        results.write(str(time) + "\n")
+        time = "{0}\n".format(time)
+        results.write(time)
+        print(time)
 
     results.close()
 

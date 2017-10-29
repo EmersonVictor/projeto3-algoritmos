@@ -121,7 +121,7 @@ class Tree:
                     aux.left = aux.right = None
                     del aux
 
-    def __substitute(slef, node):
+    def __substitute(self, node):
         #Encontra o antecessor de um valor para auxiliar na remoção de nós com 2 filhos
         rootAux = None
         aux = node.left
