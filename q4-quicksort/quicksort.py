@@ -21,12 +21,10 @@ def quickSort1(array):
 		pivot = array.pop(0)
 		return quickSort1([x for x in array if x.getPlaca() < pivot.getPlaca()]) + [pivot] + quickSort1([x for x in array if x.getPlaca() >= pivot.getPlaca()])
 
-
 def quickSort2(array):
 	# Ordenação quicksort com implementação utilizando método de partição
 	qs2(array, 0, len(array) - 1)
 	return array
-
 
 def qs2(array, left, right):
 	# Ordenação quicksort com implementação utilizando método de partição - função auxiliar
@@ -36,7 +34,6 @@ def qs2(array, left, right):
 		pivot = partition(array, left, right)
 		qs2(array, left, pivot - 1)
 		qs2(array, pivot + 1, right)
-
 
 def partition(array, left, right):
 	# Divisão do array em duas partes, menores que o pivô e maiores que o pivô
@@ -62,7 +59,6 @@ def partition(array, left, right):
 			cont = False
 		else:
 			array[l], array[r] = array[r], array[l]
-
 
 	array[left], array[r] = array[r], array[left]
 	return r

@@ -35,10 +35,10 @@ class Item:
 
 class Node:
     #Corresponde aos nós que compoem uma lista encadeada
-    def __init__(self,before=None,item=None,next=None):
+    def __init__(self,before=None,item=None,after=None):
         self.before = before
         self.item = item
-        self.next = next
+        self.after = 
 
 class Dictionary:
     #Implementação de um dicionário por meio de lista encadeada
@@ -53,46 +53,46 @@ class Dictionary:
 
     def insertStart(self, item):
         #Insere item no início
-        aux = self.__first.next
-        self.__first.next = Node(self.__first,item,self.__first.next)
+        aux = self.__first.after
+        self.__first.after = Node(self.__first,item,self.__first.after)
 
         if self.empty():
-            self.__last = self.__first.next
+            self.__last = self.__first.after
         else:
-            aux.before = self.__first.next
+            aux.before = self.__first.after
 
     def insertEnd(self, item):
         #Insere item no fim
         self.__last = Node(self.__last,item,None)
-        self.__last = self.__last.next
+        self.__last = self.__last.after
 
 	def insertOrdered(self,item):
 		#Insere um item de forma ordenada
-		aux = self.__first.next
+		aux = self.__first.after
 		while not(aux is None) and not(aux.item.getKey() > key):
-			aux = aux.next
+			aux = aux.after
 
 		if aux is None:
-			self.__last.next = Node(self.__last, item, None)
-			self.__last = self.__last.next
+			self.__last.after = Node(self.__last, item, None)
+			self.__last = self.__last.after
 		else:
-			aux.before.next = Node(aux.before,item,aux)
-			aux.before = aux.before.next
+			aux.before.after = Node(aux.before,item,aux)
+			aux.before = aux.before.after
 
     def removeStart(self):
         #Remove elemento do início
         if self.empty():
             raise IndexError ("Remove from empty list")
 
-        aux = self.__first.next
-        self.__first = aux.next
+        aux = self.__first.after
+        self.__first = aux.after
 
-        if self.__first.next is self.__last:
+        if self.__first.after is self.__last:
             self.__last = self.__first
         else:
-            aux.next.before = self.__first
+            aux.after.before = self.__first
 
-        aux.next = aux.before = None
+        aux.after = aux.before = None
         del aux
 
     def removeEnd(self):
@@ -101,7 +101,7 @@ class Dictionary:
             raise IndexError ("Remove from empty list")
 
         aux = self.__last
-        aux.before.next = aux.next
+        aux.before.after = aux.after
         self.__last = aux.before
         aux.before = None
         del aux
@@ -111,19 +111,19 @@ class Dictionary:
 		if self.empty():
 			raise IndexError ("Remove from empty list")
 
-		aux = self.__first.next
+		aux = self.__first.after
 		while not(aux is None) and not(aux.item.getKey() == key):
-			aux = aux.next
+			aux = aux.after
 
 		if aux is None:
 			raise KeyError("Key not found")
 		else:
-			aux.before.next = aux.next
-			if not (aux.next is None):
-				aux.next.before = aux.before
+			aux.before.after = aux.after
+			if not (aux.after is None):
+				aux.after.before = aux.before
 			if self.__last is aux:
 				self.__last = aux.before
-			aux.next = aux.before = None
+			aux.after = aux.before = None
 			del aux
 
 	def searchKey(self, key):
@@ -131,9 +131,9 @@ class Dictionary:
 		if self.empty():
 			raise IndexError ("Search on empty list")
 
-		aux = self.__first.next
+		aux = self.__first.after
 		while not(aux is None) and not(aux.item.getKey() == key):
-			aux = aux.next
+			aux = aux.after
 
 		if aux is None:
 			raise KeyError("Key not found")
@@ -146,15 +146,15 @@ class Dictionary:
 		if self.empty() == True:
 			raise IndexError("Print from empty list")
 
-		aux = self.__first.next
+		aux = self.__first.after
 		startAt = 1
 
 		while startAt < start:
 			if aux is None:
 				raise IndexError("Index out of range")
-			aux = aux.next
+			aux = aux.after
 			startAt += 1
 
 		while not(aux is None):
 			print(aux)
-			aux = aux.next
+			aux = aux.after

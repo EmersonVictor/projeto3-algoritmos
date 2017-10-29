@@ -18,7 +18,7 @@ from  quicksort import *
 import timeit
 
 def testQuicksort():
-	array = createList("/home/emersonvictor/Desktop/Projetos/projeto3-algoritmos-20172/testes/veiculos.txt")
+	array = createList("../testes/veiculos.txt")
 	results = open("qs-results.txt",'a+')
 	results.write("---------- TESTE ----------")
 	results.write("\n")

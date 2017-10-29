@@ -18,8 +18,8 @@ def countSums(array):
 	#Conta a quantidade de triplas que somadas resultam em zero
 	qs2(array)
 	size = len(array)
-	total = 0 
-
+	total = 0
+	
 	for i in range(size):
 		for j in range(i+1, size):
 			if binarySearch(-array[i]-array[j], array) > j:
