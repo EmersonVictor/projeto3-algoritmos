@@ -26,7 +26,7 @@ def testQuicksort():
 
 	try:
 		result = "QS1 = Duração com elementos não ordenados: {0}\n".format(timeQS1(array))
-	except RecursionError as e:
+	except RecursionError:
 		result = "QS1 = Duração com elementos não ordenados: -1\n"
 
 	results.write(result)
@@ -34,7 +34,7 @@ def testQuicksort():
 
 	try:
 		result = "QS2 = Duração com elementos não ordenados: {0}\n".format(timeQS2(array))
-	except RecursionError as e:
+	except RecursionError:
 		result = "QS2 = Duração com elementos não ordenados: -1\n"
 
 	results.write(result)
@@ -46,7 +46,7 @@ def testQuicksort():
 	array = sorted(array, key=lambda x: x.getPlaca())
 	try:
 		result = "QS1 = Duração com elementos ordenados crescentemente: {0}\n".format(timeQS1(array))
-	except RecursionError as e:
+	except RecursionError:
 		result = "QS1 = Duração com elementos ordenados crescentemente: -1\n"
 
 	results.write(result)
@@ -54,7 +54,7 @@ def testQuicksort():
 
 	try:
 		result = "QS2 = Duração com elementos ordenados crescentemente: {0}\n".format(timeQS2(array))
-	except RecursionError as e:
+	except RecursionError:
 		result = "QS2 = Duração com elementos ordenados crescentement: -1\n"
 
 	results.write(result)
@@ -66,7 +66,7 @@ def testQuicksort():
 
 	try:
 		result = "QS1 = Duração com elementos ordenados decrescentemente: {0}\n".format(timeQS1(array))
-	except RecursionError as e:
+	except RecursionError:
 		result = "QS1 = Duração com elementos ordenados decrescentemente: -1\n"
 
 	results.write(result)
@@ -74,7 +74,7 @@ def testQuicksort():
 
 	try:
 		result = "QS2 = Duração com elementos ordenados decrescentemente: {0}\n".format(timeQS2(array))
-	except RecursionError as e:
+	except RecursionError:
 		result = "QS2 = Duração com elementos ordenados decrescentement: -1\n"
 
 	results.write(result)

@@ -12,7 +12,7 @@ Data:	2017-10-22
 Copyright(c) 2017 Emerson Victor
 '''
 
-class Item:
+class Item(object):
     #Corresponde a cada item dentro de um dicionário, possui os parâmetros chave e valor
     def __init__(self,key,value):
         self.__key = key
@@ -34,7 +34,7 @@ class Item:
     def setValue(self,value):
         self.__value = value
 
-class Node:
+class Node(object):
     #Corresponde aos nós que compoem uma lista encadeada
     def __init__(self,before=None,item=None,after=None):
         self.before = before
@@ -44,7 +44,7 @@ class Node:
     def __repr__(self):
         return "{0}".format(self.item)
 
-class Dictionary:
+class Dictionary(object):
     #Implementação de um dicionário por meio de lista encadeada
     def __init__(self,first=None,last=None):
         self.__first = self.__last = Node()

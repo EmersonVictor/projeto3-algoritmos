@@ -12,7 +12,6 @@ Data:	2017-10-22
 Copyright(c) 2017 Emerson Victor
 '''
 from time import perf_counter
-import sys
 from conta_somas import *
 import numpy
 

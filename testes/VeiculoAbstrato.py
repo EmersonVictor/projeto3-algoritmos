@@ -44,7 +44,7 @@ class Veiculo:
 
     # Descrição: O método __validaReservado realiza a validação do valor recebido em reservado, analisando se é um valor booleano
     def __validaReservado(self, reservado):
-        if type(reservado) is bool:
+        if isinstance(reservado, bool):
             return reservado
         elif reservado.lower() == "true":
                         return True

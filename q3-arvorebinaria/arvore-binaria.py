@@ -11,7 +11,7 @@ Data:	2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
-class Item:
+class Item(object):
     #Corresponde a cada item dentro de um dicionário, possui os parâmetros chave e valor
     def __init__(self,key,value):
         self.__key = key
@@ -32,14 +32,14 @@ class Item:
     def setValue(self,value):
         self.__value = value
 
-class Node:
+class Node(object):
     #Corresponde aos nós que compoem uma lista encadeada
     def __init__(self,left=None,item=None,right=None):
         self.left = left
         self.item = item
         self.right = right
 
-class Tree:
+class Tree(object):
     #Árvore binária não balanceada
     def __init__(self,root):
         self.__root = None
