@@ -12,7 +12,6 @@ Data:	2017-10-22
 Copyright(c) 2017 Emerson Victor
 '''
 
-
 def quickSort1(array):
 	# Ordenação quicksort com implementação utilizando método quebra e concatenação de lista
 	if array == []:

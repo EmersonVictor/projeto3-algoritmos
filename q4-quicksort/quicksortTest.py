@@ -18,6 +18,7 @@ from  quicksort import *
 import timeit
 
 def testQuicksort():
+	#Realiza o teste de tempo de execução das duas implementações do quicksort com o arquivo de veículos e escreve os resultados em um arquivo
 	array = createList("../testes/veiculos.txt")
 	results = open("qs-results.txt",'a+')
 	results.write("---------- TESTE ----------")
@@ -84,16 +85,19 @@ def testQuicksort():
 
 
 def timeQS1(array):
+	#Calcula o tempo de execução do 1º algoritmo quicksort
 	start = timeit.default_timer()
 	quickSort1(array)
 	end = timeit.default_timer()
 	return (end - start)
 
 def timeQS2(array):
+	#Calcula o tempo de execução do 2º algoritmo do quicksort
 	start = timeit.default_timer()
 	quickSort2(array)
 	end = timeit.default_timer()
 	return (end - start)
 
 if __name__ == "__main__":
-	testQuicksort()
+	for x in range(20):
+		testQuicksort()
