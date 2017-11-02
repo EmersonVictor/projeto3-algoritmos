@@ -5,38 +5,39 @@ Centro de Informática (CIn) (http://www.cin.ufpe.br)
 Graduando em Sistemas de Informação
 IF969 - Algoritmos e estrutura de dados
 
-Autor:	Emerson Victor Ferreira da Luz (evfl)
-Email:	evfl@cin.ufpe.br
-Data:	2017-10-22
+Autor:  Emerson Victor Ferreira da Luz (evfl)
+Email:  evfl@cin.ufpe.br
+Data:   2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
 
+
 class Item(object):
-    #Corresponde a cada item dentro de um dicionário, possui os parâmetros chave e valor
-    def __init__(self,key,value):
+    # Corresponde a cada item dentro de um dicionário, possui os parâmetros chave e valor
+    def __init__(self, key, value):
         self.__key = key
         self.__value = value
 
     def __repr__(self):
-        return "Key:{0} - Value:{1}".format(self.__key,self.__value)
-
+        return "Key:{0} - Value:{1}".format(self.__key, self.__value)
 
     def getKey(self):
         return self.__key
 
-    def setKey(self,key):
+    def setKey(self, key):
         self.__key = key
 
     def getValue(self):
         return self.__value
 
-    def setValue(self,value):
+    def setValue(self, value):
         self.__value = value
 
+
 class Node(object):
-    #Corresponde aos nós que compoem uma lista encadeada
-    def __init__(self,before=None,item=None,after=None):
+    # Corresponde aos nós que compoem uma lista encadeada
+    def __init__(self, before=None, item=None, after=None):
         self.before = before
         self.item = item
         self.after = after
@@ -44,34 +45,49 @@ class Node(object):
     def __repr__(self):
         return "{0}".format(self.item)
 
+
 class Dictionary(object):
-    #Implementação de um dicionário por meio de lista encadeada
-    def __init__(self,first=None,last=None):
+    # Implementação de um dicionário por meio de lista encadeada
+    def __init__(self, first=None, last=None):
         self.__first = self.__last = Node()
 
     def __empty(self):
-        #Verifica se o dicionário está vazio e devolve um valor bool referente ao resultado
+        # Verifica se o dicionário está vazio e devolve um valor bool referente ao resultado
         if self.__last is self.__first:
             return True
         return False
 
     def insertStart(self, item):
-        #Insere item no início
+        # Insere item no início
         aux = self.__first.after
-        self.__first.after = Node(self.__first,item,self.__first.after)
+        while not(aux is None) and aux.item.getKey() != item.getKey():
+            aux = aux.after
 
-        if self.__empty():
-            self.__last = self.__first.after
+        if not(aux is None) and aux.item.getKey() == item.getKey():
+            aux.item.setValue(item.getValue())
         else:
-            aux.before = self.__first.after
+            aux = self.__first.after
+            self.__first.after = Node(self.__first, item, self.__first.after)
+
+            if self.__empty():
+                self.__last = self.__first.after
+            else:
+                aux.before = self.__first.after
 
     def insertEnd(self, item):
-        #Insere item no fim
-        self.__last = Node(self.__last,item,None)
-        self.__last = self.__last.after
+        # Insere item no fim
+        aux = self.__first.after
+        while not(aux is None) and aux.item.getKey() != item.getKey():
+            aux = aux.after
 
-    def insertOrdered(self,item,reverse=False):
-        #Insere um item de forma ordenada
+        if aux.item.getKey() == item.getKey():
+            aux.item.setValue(item.getValue())
+        else:
+            self.__last = Node(self.__last, item, None)
+            self.__last = self.__last.after
+
+    def insertOrdered(self, item,reverse=False):
+        # Insere um item de forma ordenada
         aux = self.__first.after
         if reverse is False:
             while not(aux is None) and aux.item.getKey() < item.getKey():
@@ -85,14 +101,16 @@ class Dictionary(object):
         if aux is None:
             self.__last.after = Node(self.__last, item, None)
             self.__last = self.__last.after
+        elif aux.item.getKey() == item.getKey():
+            aux.item.setValue(item.getValue())
         else:
-            aux.before.after = Node(aux.before,item,aux)
+            aux.before.after = Node(aux.before, item, aux)
             aux.before = aux.before.after
 
     def removeStart(self):
-        #Remove elemento do início
+        # Remove elemento do início
         if self.__empty():
-            raise IndexError ("Remove from empty list")
+            raise IndexError("Remove from empty list")
 
         aux = self.__first.after
         self.__first.after = aux.after
@@ -106,9 +124,9 @@ class Dictionary(object):
         del aux
 
     def removeEnd(self):
-        #Remove elemento do fim
+        # Remove elemento do fim
         if self.__empty():
-            raise IndexError ("Remove from empty list")
+            raise IndexError("Remove from empty list")
 
         aux = self.__last
         aux.before.after = aux.after
@@ -117,9 +135,9 @@ class Dictionary(object):
         del aux
 
     def removeKey(self, key):
-        #Remove elemento de acordo com uma chave
+        # Remove elemento de acordo com uma chave
         if self.__empty():
-            raise IndexError ("Remove from empty list")
+            raise IndexError("Remove from empty list")
 
         aux = self.__first.after
         while not(aux is None) and not(aux.item.getKey() == key):
@@ -137,9 +155,9 @@ class Dictionary(object):
             del aux
 
     def searchKey(self, key):
-        #Pesquisa elemento de acorco com uma chave
+        # Pesquisa elemento de acorco com uma chave
         if self.__empty():
-            raise IndexError ("Search on empty list")
+            raise IndexError("Search on empty list")
 
         aux = self.__first.after
         while not(aux is None) and not(aux.item.getKey() == key):
@@ -150,14 +168,15 @@ class Dictionary(object):
         else:
             return aux.item
 
-    def printItems(self,start=1):
-        #Imprime todos os elementos da lista na tela
+    def printItems(self, start=1):
+        # Imprime todos os elementos da lista na tela
 
-        if self.__empty() == True:
+        if self.__empty() is True:
             raise IndexError("Print empty list")
 
         aux = self.__first.after
         startAt = 1
+        teste = 0
 
         while startAt < start:
             if aux is None:
@@ -168,3 +187,6 @@ class Dictionary(object):
         while not(aux is None):
             print(aux)
             aux = aux.after
+            teste += 1
+
+        return teste

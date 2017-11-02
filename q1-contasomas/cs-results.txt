@@ -1,1 +1,70 @@
+Tempo gasto com 50 elementos foi 0.004701291996752843 segundos
+Tempo gasto com 100 elementos foi 0.02331280199723551 segundos
+Tempo gasto com 250 elementos foi 0.1355139709994546 segundos
+Tempo gasto com 500 elementos foi 0.6529539900002419 segundos
+Tempo gasto com 1000 elementos foi 2.911640048994741 segundos
+Tempo gasto com 1500 elementos foi 7.018828832995496 segundos
+
+Tempo gasto com 50 elementos foi 0.0043587219988694414 segundos
+Tempo gasto com 100 elementos foi 0.020542256999760866 segundos
+Tempo gasto com 250 elementos foi 0.1341489510014071 segundos
+Tempo gasto com 500 elementos foi 0.6524966649958515 segundos
+Tempo gasto com 1000 elementos foi 2.9071487490000436 segundos
+Tempo gasto com 1500 elementos foi 7.06061561399838 segundos
+
+Tempo gasto com 50 elementos foi 0.004356272998847999 segundos
+Tempo gasto com 100 elementos foi 0.020008886996947695 segundos
+Tempo gasto com 250 elementos foi 0.13501529700442916 segundos
+Tempo gasto com 500 elementos foi 0.660665331997734 segundos
+Tempo gasto com 1000 elementos foi 2.943541095999535 segundos
+Tempo gasto com 1500 elementos foi 7.398276564999833 segundos
+
+Tempo gasto com 50 elementos foi 0.004375652002636343 segundos
+Tempo gasto com 100 elementos foi 0.02024849900044501 segundos
+Tempo gasto com 250 elementos foi 0.13384665200283052 segundos
+Tempo gasto com 500 elementos foi 0.7032745600008639 segundos
+Tempo gasto com 1000 elementos foi 3.0661245029987185 segundos
+Tempo gasto com 1500 elementos foi 7.315532382999663 segundos
+
+Tempo gasto com 50 elementos foi 0.004365476997918449 segundos
+Tempo gasto com 100 elementos foi 0.019686678002472036 segundos
+Tempo gasto com 250 elementos foi 0.15375090199813712 segundos
+Tempo gasto com 500 elementos foi 0.7342834900046 segundos
+Tempo gasto com 1000 elementos foi 3.0366172020003432 segundos
+Tempo gasto com 1500 elementos foi 7.399158558000636 segundos
+
+Tempo gasto com 50 elementos foi 0.0043534959986573085 segundos
+Tempo gasto com 100 elementos foi 0.021868958996492438 segundos
+Tempo gasto com 250 elementos foi 0.14775294900027802 segundos
+Tempo gasto com 500 elementos foi 0.7037637199973688 segundos
+Tempo gasto com 1000 elementos foi 3.1831641680037137 segundos
+Tempo gasto com 1500 elementos foi 7.172158304005279 segundos
+
+Tempo gasto com 50 elementos foi 0.004325866000726819 segundos
+Tempo gasto com 100 elementos foi 0.019643788997200318 segundos
+Tempo gasto com 250 elementos foi 0.166852188995108 segundos
+Tempo gasto com 500 elementos foi 0.6828485459991498 segundos
+Tempo gasto com 1000 elementos foi 2.9987044830049854 segundos
+Tempo gasto com 1500 elementos foi 7.4191596989985555 segundos
+
+Tempo gasto com 50 elementos foi 0.004368547997728456 segundos
+Tempo gasto com 100 elementos foi 0.020402699999976903 segundos
+Tempo gasto com 250 elementos foi 0.14487622899468988 segundos
+Tempo gasto com 500 elementos foi 0.681751614996756 segundos
+Tempo gasto com 1000 elementos foi 3.0401188519972493 segundos
+Tempo gasto com 1500 elementos foi 7.1863133480001125 segundos
+
+Tempo gasto com 50 elementos foi 0.005060062001575716 segundos
+Tempo gasto com 100 elementos foi 0.022765167996112723 segundos
+Tempo gasto com 250 elementos foi 0.13778084299701732 segundos
+Tempo gasto com 500 elementos foi 0.6561354590012343 segundos
+Tempo gasto com 1000 elementos foi 2.9890742319985293 segundos
+Tempo gasto com 1500 elementos foi 7.229417144000763 segundos
+
+Tempo gasto com 50 elementos foi 0.004549849996692501 segundos
+Tempo gasto com 100 elementos foi 0.02076697700249497 segundos
+Tempo gasto com 250 elementos foi 0.14719860599871026 segundos
+Tempo gasto com 500 elementos foi 0.6624593260057736 segundos
+Tempo gasto com 1000 elementos foi 2.9681000679993303 segundos
+Tempo gasto com 1500 elementos foi 7.181934014995932 segundos
 

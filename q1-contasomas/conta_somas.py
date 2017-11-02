@@ -5,16 +5,16 @@ Centro de Informática (CIn) (http://www.cin.ufpe.br)
 Graduando em Sistemas de Informação
 IF969 - Algoritmos e estrutura de dados
 
-Autor:	Emerson Victor Ferreira da Luz (evfl)
-Email:	evfl@cin.ufpe.br
-Data:	2017-10-22
+Autor:  Emerson Victor Ferreira da Luz (evfl)
+Email:  evfl@cin.ufpe.br
+Data:   2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
 
 def countSums(array):
     #Conta a quantidade de triplas que somadas resultam em zero
-    array.sort()
+    mergeSort(array)
     size = len(array)
     total = 0
 
@@ -40,3 +40,42 @@ def binarySearch(number, array):
             return position
 
     return -1
+
+
+def mergeSort(array):
+    # Ordenação por meio do merge sort
+    global aux
+    aux = list(array)
+    mergeSortAux(array, 0, len(array) - 1)
+    del aux
+
+
+def mergeSortAux(array, left, right):
+    if left >= right:
+        return
+    middle = (left + right) // 2
+    mergeSortAux(array, left, middle)
+    mergeSortAux(array, middle + 1, right)
+    merge(array, left, middle, right)
+
+
+def merge(array, left, middle, right):
+    i = left
+    j = middle + 1
+    for k in range(left,right + 1): 
+        aux[k] = array[k]
+    
+    for k in range(left, right + 1):
+        if i > middle: 
+            array[k] = aux[j]
+            j+=1
+        elif j > right: 
+            array[k] = aux[i] 
+            i+=1
+        elif aux[i] > aux[j]: 
+            array[k] = aux[j]
+            j+=1
+        else: 
+            array[k] = aux[i]
+            i+=1
+

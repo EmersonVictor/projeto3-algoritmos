@@ -15,38 +15,40 @@ import linecache
 import timeit
 import sys
 import numpy
-from lista_encadeada import *
+from arvore_binaria import *
 sys.path.append('../testes')
 from listaVeiculos import *
 
 
-def newList(ordered=False, reverse=False):
-    # Cria um objeto do tipo dicionário não ordenado ou ordenado crescentemente/decrescentemente
-    array = Dictionary()
+def newTree(ordered=False, reverse=False):
+    # Cria um objeto do tipo árvore não ordenado ou ordenado crescentemente/decrescentemente
+    tree = Tree()
     auxArray = createList("../testes/veiculos.txt")
 
     if ordered is False:
         for i in auxArray:
             item = Item(i.getPlaca(), i)
-            array.insertStart(item)
+            tree.insert(item)
 
     elif ordered is True and reverse is False:
+        auxArray = sorted(auxArray, key=lambda x: x.getPlaca())
         for i in auxArray:
             item = Item(i.getPlaca(), i)
-            array.insertOrdered(item)
+            tree.insert(item)
 
     elif ordered is True and reverse is True:
+        auxArray = sorted(auxArray, key=lambda x: x.getPlaca(), reverse=True)
         for i in auxArray:
             item = Item(i.getPlaca(), i)
-            array.insertOrdered(item, True)
+            tree.insert(item)
 
-    return array
+    return tree
 
 
-def timeSearch(dictionary, key):
-    # Calcula o tempo de busca de uma determinada chave em um dicionário
+def timeSearch(tree, key):
+    # Calcula o tempo de busca de uma determinada chave em uma árvore
     start = timeit.default_timer()
-    dictionary.searchKey(key)
+    tree.search(key)
     end = timeit.default_timer()
     return end - start
 
@@ -65,36 +67,36 @@ def keysToSearch(seed, size):
 
 
 def main():
-    dictionary = newList()
+    tree = newTree()
     keys = keysToSearch(57, 1000)
-    results = open("ls-results.txt", "a+")
+    results = open("tr-results.txt", "a+")
     results.write("TESTE NÃO ORDENADO\n\n")
     print("TESTE NÃO ORDENADO\n\n")
 
     for key in keys:
-        time = timeSearch(dictionary, key)
+        time = timeSearch(tree, key)
         time = "{0}\n".format(time)
         results.write(time)
         print(time)
 
     results.write("\n")
-    dictionary = newList(True)
+    tree = newTree(True)
     results.write("TESTE ORDENADO CRESCENTEMENTE\n\n")
     print("TESTE ORDENADO CRESCENTEMENTE\n\n")
 
     for key in keys:
-        time = timeSearch(dictionary, key)
+        time = timeSearch(tree, key)
         time = "{0}\n".format(time)
         results.write(time)
         print(time)
 
     results.write("\n")
-    dictionary = newList(True, True)
+    tree = newTree(True, True)
     results.write("TESTE ORDENADO DECRESCENTEMENTE\n\n")
     print("TESTE ORDENADO DECRESCENTEMENTE\n\n")
 
     for key in keys:
-        time = timeSearch(dictionary, key)
+        time = timeSearch(tree, key)
         time = "{0}\n".format(time)
         results.write(time)
         print(time)

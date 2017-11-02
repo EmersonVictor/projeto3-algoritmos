@@ -5,9 +5,9 @@ Centro de Informática (CIn) (http://www.cin.ufpe.br)
 Graduando em Sistemas de Informação
 IF969 - Algoritmos e estrutura de dados
 
-Autor:	Emerson Victor Ferreira da Luz (evfl)
-Email:	evfl@cin.ufpe.br
-Data:	2017-10-22
+Autor:  Emerson Victor Ferreira da Luz (evfl)
+Email:  evfl@cin.ufpe.br
+Data: 2017-10-22
 
 Copyright(c) 2017 Emerson Victor
 '''
@@ -34,18 +34,19 @@ def main():
     seeds = [11,7,13,19,5189,7919]
     tam = [50,100,250,500,1000,1500]
     for i,seed in enumerate(seeds):
-       numpy.random.seed(seed)
-       vetor = gera_seq_aleatoria(tam[i])
-       cron = Cronometro()
-       total = countSums(vetor)
-       resultado = "Tempo gasto com {0} elementos foi {1} segundos".format(tam[i],cron.tempo_gasto())
-       print(resultado)
-       resultados.write(resultado + "\n")
-       del vetor
-       del cron
+        numpy.random.seed(seed)
+        vetor = gera_seq_aleatoria(tam[i])
+        cron = Cronometro()
+        total = countSums(vetor)
+        resultado = "Tempo gasto com {0} elementos foi {1} segundos".format(tam[i],cron.tempo_gasto())
+        print(resultado)
+        resultados.write(resultado + "\n")
+        del vetor
+        del cron
 
     resultados.write("\n")
     resultados.close()
 
 if __name__ == '__main__':
-    main()
+    for x in range(10):
+        main()

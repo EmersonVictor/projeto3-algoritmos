@@ -1,0 +1,499 @@
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48259147299904726
+QS2 = Duração com elementos não ordenados: 0.30996449400117854
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.4825896330003161
+QS2 = Duração com elementos não ordenados: 0.3120123650005553
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48345263399824034
+QS2 = Duração com elementos não ordenados: 0.30712947999927565
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.4768250970009831
+QS2 = Duração com elementos não ordenados: 0.30640883299929556
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48415845700219506
+QS2 = Duração com elementos não ordenados: 0.30831305399988196
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48202993599988986
+QS2 = Duração com elementos não ordenados: 0.3104348890010442
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48202267099986784
+QS2 = Duração com elementos não ordenados: 0.30910525400031474
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.4809700750010961
+QS2 = Duração com elementos não ordenados: 0.30955276700115064
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48203369900147663
+QS2 = Duração com elementos não ordenados: 0.311726918000204
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.48154170400084695
+QS2 = Duração com elementos não ordenados: 0.31108259900065605
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.38754480000352487
+QS2 = Duração com elementos não ordenados: 0.24144237299697124
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.3871247829993081
+QS2 = Duração com elementos não ordenados: 0.2473789290015702
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.38722552599938354
+QS2 = Duração com elementos não ordenados: 0.24154801899931044
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.3867752149999433
+QS2 = Duração com elementos não ordenados: 0.24205033000180265
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.395191537001665
+QS2 = Duração com elementos não ordenados: 0.24443217800217099
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.38798911399862845
+QS2 = Duração com elementos não ordenados: 0.24091158800001722
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.38789171100142994
+QS2 = Duração com elementos não ordenados: 0.2405364609985554
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.3866618859974551
+QS2 = Duração com elementos não ordenados: 0.2410111049975967
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.3889294449982117
+QS2 = Duração com elementos não ordenados: 0.24008043299909332
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.3886835940029414
+QS2 = Duração com elementos não ordenados: 0.24242694299755385
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.21901192999939667
+QS2 = Duração com elementos não ordenados: 0.14107514500210527
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.21904724599880865
+QS2 = Duração com elementos não ordenados: 0.13785659000132
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.2227143649943173
+QS2 = Duração com elementos não ordenados: 0.14439121200121008
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.2187802870030282
+QS2 = Duração com elementos não ordenados: 0.1376946919990587
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.23468191899883095
+QS2 = Duração com elementos não ordenados: 0.14277090299583506
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.22733455599518493
+QS2 = Duração com elementos não ordenados: 0.14157190300466027
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.2403796090002288
+QS2 = Duração com elementos não ordenados: 0.13785849799751304
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.2197827900017728
+QS2 = Duração com elementos não ordenados: 0.1380351000043447
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.21964502800256014
+QS2 = Duração com elementos não ordenados: 0.13757525500113843
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.21995658699597698
+QS2 = Duração com elementos não ordenados: 0.13758519899420207
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.09814497899787966
+QS2 = Duração com elementos não ordenados: 0.06588047999684932
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.09891948400036199
+QS2 = Duração com elementos não ordenados: 0.06761656499293167
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.09858826200070325
+QS2 = Duração com elementos não ordenados: 0.06633158300246578
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.09869384199555498
+QS2 = Duração com elementos não ordenados: 0.0660122629997204
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.09898684100335231
+QS2 = Duração com elementos não ordenados: 0.06614374100172427
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.10239713600458344
+QS2 = Duração com elementos não ordenados: 0.06968554499326274
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.10432831499929307
+QS2 = Duração com elementos não ordenados: 0.06878853299713228
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.11943377999705262
+QS2 = Duração com elementos não ordenados: 0.06592487500165589
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.0980409179974231
+QS2 = Duração com elementos não ordenados: 0.06617605299834395
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.10630799600039609
+QS2 = Duração com elementos não ordenados: 0.06907707099890104
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.016980223001155537
+QS2 = Duração com elementos não ordenados: 0.01069071199890459
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.01653701000032015
+QS2 = Duração com elementos não ordenados: 0.010625871000229381
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.01706359400122892
+QS2 = Duração com elementos não ordenados: 0.011706697994668502
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.016805662999104243
+QS2 = Duração com elementos não ordenados: 0.010810029001731891
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.024218977996497415
+QS2 = Duração com elementos não ordenados: 0.021692620000976603
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.016727862996049225
+QS2 = Duração com elementos não ordenados: 0.01076282100257231
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.017982208999455906
+QS2 = Duração com elementos não ordenados: 0.010905491995799821
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.016589884995482862
+QS2 = Duração com elementos não ordenados: 0.010682749998522922
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.016682601999491453
+QS2 = Duração com elementos não ordenados: 0.010634409998601768
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
+---------- TESTE ----------
+QS1 = Duração com elementos não ordenados: 0.01668257099663606
+QS2 = Duração com elementos não ordenados: 0.0107173399956082
+--
+QS1 = Duração com elementos ordenados crescentemente: -1
+QS2 = Duração com elementos ordenados crescentement: -1
+--
+QS1 = Duração com elementos ordenados decrescentemente: -1
+QS2 = Duração com elementos ordenados decrescentement: -1
+
